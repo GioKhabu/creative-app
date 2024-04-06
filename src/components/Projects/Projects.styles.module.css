@@ -1,0 +1,234 @@
+.projectsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -200px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50.3%;
+  height: 528px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  background-color: #191921;
+}
+
+.titleWrapper > img {
+  position: absolute;
+  top: 186px;
+  right: -67px;
+  width: 134px;
+  height: 60px;
+}
+
+.titleGroup > h2 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 800;
+  list-style: 64px;
+  width: 445px;
+  margin-bottom: 51px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.buttons button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: #f94f4f;
+  border: 1px solid #f94f4f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: #ff9393;
+  border: 1px solid #ff9393;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projetImage {
+  position: relative;
+  width: 63%;
+}
+
+.projetImage img {
+  width: 100%;
+}
+
+.darkPattern {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  bottom: 0px;
+  background: linear-gradient(to top, black, rgb(0, 0, 0, 0));
+}
+
+.imageData {
+  margin-right: 154px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.imageData h3 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.imageData h4 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+@media (min-width: 1300px) {
+  .desktopImage {
+    display: block;
+    width: 100%;
+  }
+
+  .tabletImage,
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1300px) {
+  .projectsWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -120px;
+  }
+  .titleWrapper {
+    width: 50.3%;
+    height: 352px;
+  }
+  .titleGroup > h2 {
+    font-size: 32px;
+    list-style: 40px;
+    width: 281px;
+    margin-bottom: 32px;
+  }
+
+  .titleWrapper > img {
+    position: absolute;
+    top: 126px;
+    right: -31.5px;
+    width: 62.53px;
+    height: 28.52px;
+    transform: scaleY(-1);
+  }
+  .darkPattern {
+    height: 130px;
+  }
+  .imageData {
+    margin-right: 40px;
+  }
+  .imageData h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .imageData h4 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .projetImage {
+    width: 57%;
+  }
+  .tabletImage {
+    display: block;
+    width: 100%;
+  }
+
+  .desktopImage,
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .projectsWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: static;
+    flex-direction: column-reverse;
+  }
+
+  .titleWrapper {
+    align-items: flex-start;
+    width: 100%;
+    height: 272px;
+    position: relative;
+  }
+
+  .titleGroup {
+    margin: 64px 24px;
+  }
+
+  .titleGroup > h2 {
+    font-size: 32px;
+    list-style: 40px;
+    width: 281px;
+    margin-bottom: 24px;
+  }
+  .titleWrapper > img {
+    display: none;
+  }
+  .projetImage {
+    width: 100%;
+  }
+  .darkPattern {
+    height: 110px;
+  }
+  .imageData {
+    margin-right: 32px;
+  }
+  .imageData h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .imageData h4 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .mobileImage {
+    width: 100%;
+    display: block;
+  }
+
+  .desktopImage,
+  .tabletImage {
+    display: none;
+  }
+}

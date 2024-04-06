@@ -1,0 +1,123 @@
+.about {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+}
+
+.aboutInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 115px;
+  left: 165px;
+  width: 50%;
+}
+
+.aboutInfo h2 {
+  font-family: "Commissioner";
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 88px;
+  text-align: left;
+}
+
+.aboutInfo p {
+  font-family: "Commissioner";
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 32px;
+  text-align: left;
+  margin: 39px 0 48px 0;
+}
+
+.aboutInfo button {
+  font-family: "Commissioner";
+  width: 177px;
+  height: 72px;
+  background-color: #f94f4f;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+}
+
+.aboutInfo button:hover {
+  background-color: #ff9393;
+}
+
+@media (min-width: 1224px) {
+  .desktopImage {
+    display: block;
+  }
+
+  .tabletImage,
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1223px) {
+  .aboutInfo {
+    top: 77px;
+    left: 39px;
+    width: 60%;
+  }
+
+  .aboutInfo h2 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .aboutInfo p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 19px 0 32px 0;
+  }
+
+  .tabletImage {
+    display: block;
+  }
+
+  .desktopImage,
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .about {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .aboutInfo {
+    position: static;
+    margin: 56px 24px 96px 24px;
+
+    width: 90%;
+  }
+  .aboutInfo h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .aboutInfo p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 19px 0 32px 0;
+  }
+  .mobileImage {
+    width: 100%;
+    display: block;
+  }
+
+  .desktopImage,
+  .tabletImage {
+    display: none;
+  }
+}

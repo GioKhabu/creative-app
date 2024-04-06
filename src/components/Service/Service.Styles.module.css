@@ -1,0 +1,183 @@
+.serviceSection {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.serviceInfoWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-family: "Commissioner";
+}
+
+.imageWrapper {
+  width: 50%;
+}
+
+.infoGroup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191921;
+  color: #fff;
+  width: 50%;
+}
+
+.pattern {
+  position: absolute;
+  top: 234px;
+  left: -67px;
+  width: 134px;
+  height: 60px;
+}
+
+.info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info h2 {
+  font-family: "Commissioner";
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+}
+.info > h2 > span {
+  color: #f94f4f;
+}
+
+.info p {
+  font-family: "Commissioner";
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 32px;
+}
+
+.info button {
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  text-align: left;
+  height: 32px;
+  width: 124px;
+  display: inline;
+  color: #f94f4f;
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+  border-bottom: 2px solid #f94f4f;
+  background-color: #191921;
+  font-family: "Commissioner";
+  cursor: pointer;
+}
+
+.info button:hover {
+  color: #ff9393;
+  border-bottom: 2px solid #ff9393;
+}
+
+@media (min-width: 1224px) {
+  .desktopImage {
+    display: block;
+    width: 100%;
+  }
+
+  .tabletImage,
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1223px) {
+  .pattern {
+    position: absolute;
+    top: 145.19px;
+    left: -31.79px;
+    width: 62.53px;
+    height: 28.52px;
+  }
+
+  .infoGroup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #191921;
+    color: #fff;
+    width: 50%;
+  }
+
+  .info {
+    width: 75%;
+    margin-top: 120px;
+  }
+
+  .info h2 {
+    font-family: "Commissioner";
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+  .info > h2 > span {
+    color: #f94f4f;
+  }
+
+  .info p {
+    font-family: "Commissioner";
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    margin: 32px 0;
+  }
+  .info button {
+    height: 29px;
+    width: 103px;
+    font-size: 15px;
+  }
+  .tabletImage {
+    display: block;
+    width: 100%;
+  }
+
+  .desktopImage,
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .serviceInfoWrapper {
+    flex-direction: column;
+  }
+  .imageWrapper {
+    width: 100%;
+  }
+  
+  .infoGroup {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    margin: 72px 24px;
+
+  }
+  .pattern {
+    position: absolute;
+    top: -15px;
+    left: 24px;
+    width: 63px;
+    height: 29px;
+  }
+  .mobileImage {
+    width: 100%;
+    display: block;
+  }
+
+  .desktopImage,
+  .tabletImage {
+    display: none;
+  }
+}
